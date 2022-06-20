@@ -1,0 +1,12 @@
+[package]
+name = "versioned_extended"
+version = "0.1.0"
+authors = ["pmarangone"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+near-sdk = { git = "https://github.com/near/near-sdk-rs/", tag = "4.0.0-pre.9", features = ["unstable"]}
